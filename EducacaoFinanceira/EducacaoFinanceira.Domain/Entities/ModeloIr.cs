@@ -1,10 +1,9 @@
 ﻿using System;
 namespace EducacaoFinanceira.Domain.Entities
 {
-	public class TipoInvestimento
+	public class ModeloIr
 	{
 		public string? Descricao { get; set; }
-		public ModeloIr? ModeloIr { get; set; }
 	}
 }
 
