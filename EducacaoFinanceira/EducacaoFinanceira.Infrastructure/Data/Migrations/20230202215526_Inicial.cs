@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace EducacaoFinanceira.Data.Migrations
+namespace EducacaoFinanceira.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Inicial : Migration
