@@ -10,3 +10,11 @@
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/obj/Debug/net7.0/refint/EducacaoFinanceira.Infrastructure.dll
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/obj/Debug/net7.0/EducacaoFinanceira.Infrastructure.pdb
 /Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/obj/Debug/net7.0/ref/EducacaoFinanceira.Infrastructure.dll
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/bin/Debug/net7.0/EducacaoFinanceira.Infrastructure.runtimeconfig.json
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/bin/Debug/net7.0/EducacaoFinanceira.Application.dll
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/bin/Debug/net7.0/EducacaoFinanceira.Domain.dll
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/bin/Debug/net7.0/EducacaoFinanceira.Application.pdb
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/bin/Debug/net7.0/EducacaoFinanceira.Domain.pdb
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/obj/Debug/net7.0/EducacaoFinanceira.Infrastructure.csproj.CopyComplete
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/obj/Debug/net7.0/EducacaoFinanceira.Infrastructure.genruntimeconfig.cache
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/bin/Debug/net7.0/appsettings.json
