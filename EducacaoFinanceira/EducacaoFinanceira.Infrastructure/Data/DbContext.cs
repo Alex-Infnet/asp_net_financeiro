@@ -1,23 +1,17 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
+using EducacaoFinanceira.Domain.Entities;
 
-namespace EducacaoFinanceira.Infrastructure.Data
-{   
-    public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<EFDbContext>
-    {
-        public EFDbContext CreateDbContext(string[] args)
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<EFDbContext>();
+namespace EducacaoFinanceira.Infrastructure
+{
+	public class EducacaoFinanceiraDbContext : DbContext
+	{
+        public EducacaoFinanceiraDbContext(DbContextOptions options) : base(options){ }
 
-            var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DbConnection"));
-            return new EFDbContext(optionsBuilder.Options);
-        }
+        public DbSet<ModeloIr> ModeloIr { get; set; }
+        public DbSet<ModeloIrOcorrencia> ModeloIrOcorrencia { get; set; }
+        public DbSet<TipoInvestimento> TipoInvestimento { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
     }
 }
 

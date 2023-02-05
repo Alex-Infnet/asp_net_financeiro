@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EducacaoFinanceira.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(EFDbContext))]
-    partial class EFDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(EducacaoFinanceiraDbContext))]
+    partial class EducacaoFinanceiraDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

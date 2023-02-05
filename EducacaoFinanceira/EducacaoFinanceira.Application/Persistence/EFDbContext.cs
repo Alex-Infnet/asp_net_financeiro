@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using EducacaoFinanceira.Domain.Entities;
 
-namespace EducacaoFinanceira.Infrastructure.Data
+namespace EducacaoFinanceira.Infrastructure
 {
 	public class EFDbContext : DbContext
 	{

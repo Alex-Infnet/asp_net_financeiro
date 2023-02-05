@@ -1,20 +1,19 @@
 ﻿using System;
 using EducacaoFinanceira.Application.Interfaces;
 using EducacaoFinanceira.Domain.Entities;
-using EducacaoFinanceira.Infrastructure.Data;
 
 namespace EducacaoFinanceira.Infrastructure.Services
 {
 	public class TipoInvestimentoService : ITipoInvestimentoService
 	{
-        public readonly EFDbContext dbContext;
-        public TipoInvestimentoService(EFDbContext _dbContext)
+        public readonly ITipoInvestimentoRepository _repository;
+        public TipoInvestimentoService(ITipoInvestimentoRepository repository)
         {
-            dbContext = _dbContext;
+            _repository = repository;
         }
-        public List<TipoInvestimento> GetAll()
+        public IEnumerable<TipoInvestimento> GetAll()
         {
-            return dbContext.TipoInvestimento.ToList();
+            return _repository.GetAll();
         }
     }
 }

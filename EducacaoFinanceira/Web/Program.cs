@@ -1,10 +1,13 @@
-using EducacaoFinanceira.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using EducacaoFinanceira.Infrastructure.InversionOfControl;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add project dependencies
+DependencyInjection.Inject(builder.Services, builder.Configuration);
 
 var app = builder.Build();
 
