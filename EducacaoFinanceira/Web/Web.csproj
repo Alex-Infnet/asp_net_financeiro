@@ -10,6 +10,7 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Views\TipoInvestimento\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
@@ -21,5 +22,8 @@
     <ProjectReference Include="..\EducacaoFinanceira.Infrastructure\EducacaoFinanceira.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\TipoInvestimento\" />
   </ItemGroup>
 </Project>
