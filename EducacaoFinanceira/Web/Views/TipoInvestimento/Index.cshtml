@@ -1,0 +1,23 @@
+﻿@model List<EducacaoFinanceira.Application.ViewModels.TipoInvestimentoViewModel>;
+@{
+    ViewData["Title"] = "Tipos de investimento para educação financeira";
+}
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Descrição</td>
+            <td>Modelo de IR</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var TipoInvestimento in Model)
+        {
+            <tr>
+                <td>@TipoInvestimento.Descricao</td>
+                <td>@TipoInvestimento.ModeloIrDescricao</td>
+            </tr>
+        }
+    </tbody>
+</table>

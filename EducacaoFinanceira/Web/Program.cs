@@ -1,16 +1,13 @@
-using EducacaoFinanceira.Data.DB;
 using Microsoft.EntityFrameworkCore;
+using EducacaoFinanceira.Infrastructure.InversionOfControl;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Add DBConnectionString
-builder.Services.AddDbContext<EFDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection"));
-});
+// Add project dependencies
+DependencyInjection.Inject(builder.Services, builder.Configuration);
 
 var app = builder.Build();
 

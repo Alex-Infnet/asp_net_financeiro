@@ -9,7 +9,14 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <ProjectReference Include="..\EducacaoFinanceira.Data\EducacaoFinanceira.Data.csproj">
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Views\TipoInvestimento\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EducacaoFinanceira.Application\EducacaoFinanceira.Application.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\EducacaoFinanceira.Infrastructure\EducacaoFinanceira.Infrastructure.csproj">
@@ -17,9 +24,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <Folder Include="Views\TipoInvestimento\" />
   </ItemGroup>
 </Project>

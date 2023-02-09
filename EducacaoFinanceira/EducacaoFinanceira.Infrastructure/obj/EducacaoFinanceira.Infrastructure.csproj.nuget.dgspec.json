@@ -4,14 +4,71 @@
     "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/EducacaoFinanceira.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/EducacaoFinanceira.Infrastructure.csproj": {
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Application/EducacaoFinanceira.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/EducacaoFinanceira.Infrastructure.csproj",
-        "projectName": "EducacaoFinanceira.Infrastructure",
-        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/EducacaoFinanceira.Infrastructure.csproj",
+        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Application/EducacaoFinanceira.Application.csproj",
+        "projectName": "EducacaoFinanceira.Application",
+        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Application/EducacaoFinanceira.Application.csproj",
         "packagesPath": "/Users/xanwerneck/.nuget/packages/",
-        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/obj/",
+        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/EducacaoFinanceira.Domain.csproj": {
+                "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/EducacaoFinanceira.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/EducacaoFinanceira.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/EducacaoFinanceira.Domain.csproj",
+        "projectName": "EducacaoFinanceira.Domain",
+        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/EducacaoFinanceira.Domain.csproj",
+        "packagesPath": "/Users/xanwerneck/.nuget/packages/",
+        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
@@ -37,6 +94,100 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/EducacaoFinanceira.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/EducacaoFinanceira.Infrastructure.csproj",
+        "projectName": "EducacaoFinanceira.Infrastructure",
+        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/EducacaoFinanceira.Infrastructure.csproj",
+        "packagesPath": "/Users/xanwerneck/.nuget/packages/",
+        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Application/EducacaoFinanceira.Application.csproj": {
+                "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Application/EducacaoFinanceira.Application.csproj"
+              },
+              "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/EducacaoFinanceira.Domain.csproj": {
+                "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceira/EducacaoFinanceira.Domain/EducacaoFinanceira.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
