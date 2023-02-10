@@ -16,6 +16,16 @@ namespace Service.Services
         {
 			return _dbContext.tipoInvestimento.ToList();
         }
+
+        public List<TipoInvestimento> GetAllActive()
+        {
+            return _dbContext.tipoInvestimento.Where(t => t.Active).ToList();
+        }
+
+        public List<TipoInvestimento> GetByDescricao(string Descricao)
+        {
+            return _dbContext.tipoInvestimento.Where(t => t.Descricao.ToLower() == Descricao.ToLower()).ToList();
+        }
     }
 }
 
