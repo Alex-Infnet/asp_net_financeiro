@@ -1,0 +1,11 @@
+﻿@model List<Domain.Entities.TipoInvestimento>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<ul>
+    @foreach (var item in Model)
+        {
+            <li>@item.Descricao</li>
+        }
+</ul>
