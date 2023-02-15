@@ -1,0 +1,32 @@
+﻿@model List<Domain.ViewModels.TipoInvestimentoViewModel>
+@{
+}
+
+<h3>Tipos de investimento</h3>
+@using (Html.BeginForm("selecionar", "investimento", FormMethod.Post))
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Descrição</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tipoInvestimento in Model)
+                {
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Selected" value="@tipoInvestimento.Id" />
+                     </td>
+                    <td>@tipoInvestimento.Descricao</td>
+                    <td>@tipoInvestimento.Status</td>
+                </tr>
+                }
+        </tbody>
+    </table>
+    <button type="submit">
+        Enviar
+    </button>
+}

@@ -9,9 +9,11 @@
   <ItemGroup>
     <None Remove="Entities\" />
     <None Remove="Interfaces\" />
+    <None Remove="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>
