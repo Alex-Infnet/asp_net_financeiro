@@ -20,6 +20,9 @@ builder.Services.AddDistributedMemoryCache();
 // Session - Implementa o modelo de gerenciamento de Session
 builder.Services.AddSession();
 
+// Add cache
+builder.Services.AddMemoryCache();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

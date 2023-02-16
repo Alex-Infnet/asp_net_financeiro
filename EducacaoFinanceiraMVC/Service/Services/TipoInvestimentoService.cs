@@ -1,6 +1,7 @@
 ﻿using System;
 using Domain.Entities;
 using Domain.Interfaces;
+using Domain.ViewModels;
 
 namespace Service.Services
 {
@@ -12,9 +13,11 @@ namespace Service.Services
 			_dbContext = dbContext;
 		}
 
-        public List<TipoInvestimento> GetAll()
+        public IList<TipoInvestimentoViewModel> GetAll()
         {
-			return _dbContext.tipoInvestimento.ToList();
+            var tipoInvestimentos = _dbContext.tipoInvestimento.ToList();
+
+            return TipoInvestimentoViewModel.GetAll(tipoInvestimentos);
         }
 
         public List<TipoInvestimento> GetAllActive()

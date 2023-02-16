@@ -1,11 +1,12 @@
 ﻿using System;
 using Domain.Entities;
+using Domain.ViewModels;
 
 namespace Domain.Interfaces
 {
 	public interface ITipoInvestimentoService
 	{
-		List<TipoInvestimento> GetAll();
+		IList<TipoInvestimentoViewModel> GetAll();
         List<TipoInvestimento> GetAllActive();
         List<TipoInvestimento> GetByDescricao(string Descricao);
     }
