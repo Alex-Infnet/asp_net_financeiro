@@ -15,6 +15,7 @@
     <None Remove="Controllers\" />
     <None Remove="Views\Investimento\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
@@ -39,5 +40,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\Investimento\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
 </Project>

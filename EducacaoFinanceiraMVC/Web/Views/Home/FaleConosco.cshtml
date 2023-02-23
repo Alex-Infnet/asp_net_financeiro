@@ -1,0 +1,12 @@
+﻿@model Domain.Entities.TipoInvestimento
+@{
+}
+
+@{ MessageHelper("Conteudo de teste"); }
+
+@using (Html.BeginForm("faleconosco", "home", FormMethod.Post))
+{
+    @Html.TextBox("Descricao", Model)
+
+    <input type="submit" value="Enviar" />
+}
