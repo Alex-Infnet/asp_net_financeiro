@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Domain.Interfaces;
 using Service.Services;
+using Microsoft.AspNetCore.Identity;
+using Domain.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +24,10 @@ builder.Services.AddSession();
 
 // Add cache
 builder.Services.AddMemoryCache();
+
+// Add authentication Provider
+builder.Services.AddDefaultIdentity<IdentityUser>()
+    .AddEntityFrameworkStores<InvestimentoDbContext>();
 
 var app = builder.Build();
 

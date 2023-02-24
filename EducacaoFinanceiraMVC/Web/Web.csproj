@@ -16,6 +16,10 @@
     <None Remove="Views\Investimento\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Views\Home\" />
+    <None Remove="Views\User\" />
+    <None Remove="Microsoft.AspNetCore.Identity.UI" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
@@ -28,6 +32,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Service\Service.csproj">
@@ -41,5 +47,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Investimento\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="Views\User\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
 </Project>
