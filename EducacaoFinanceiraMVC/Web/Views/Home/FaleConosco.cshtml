@@ -1,5 +1,8 @@
 ﻿@model Domain.Entities.TipoInvestimento
-@{
+
+@if (ViewBag.outputMessage != null)
+{
+    <message output-message="ViewBag.outputMessage" />
 }
 
 @using (Html.BeginForm("faleconosco", "home", FormMethod.Post))

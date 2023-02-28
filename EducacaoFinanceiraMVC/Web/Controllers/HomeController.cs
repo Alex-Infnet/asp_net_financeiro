@@ -7,6 +7,7 @@ using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Web.Filters;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Web.TagHelpers;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,6 +23,11 @@ namespace Web.Controllers
         [HttpPost]
         public IActionResult FaleConosco(TipoInvestimento tipoInvestimento)
         {
+            ViewBag.outputMessage = new FormOutputMessage()
+            {
+                Valid = false,
+                Message = "Formulário enviado com sucesso"
+            };
             return View(tipoInvestimento);
         }
         [ResultFilter]
