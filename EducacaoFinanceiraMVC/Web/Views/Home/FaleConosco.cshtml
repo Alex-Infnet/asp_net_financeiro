@@ -1,4 +1,4 @@
-﻿@model Domain.Entities.TipoInvestimento
+﻿@model Domain.Entities.Contact
 
 @if (ViewBag.outputMessage != null)
 {
@@ -7,7 +7,18 @@
 
 @using (Html.BeginForm("faleconosco", "home", FormMethod.Post))
 {
-    @Html.TextBox("Descricao", Model)
+    <div class="mb-3">
+        @Html.Label("Name", "Nome:", new { @class = "form-label" })
+        @Html.TextBox("Name", Model?.Name, new { @class = "form-control" })
+    </div>
+    <div class="mb-3">
+        @Html.Label("Email", "E-mail:", new { @class = "form-label" })
+        @Html.TextBox("Email", Model?.Email, new { @class = "form-control" })
+    </div>
+    <div class="mb-3">
+        @Html.Label("Conteudo", "Conteúdo:", new { @class = "form-label" })
+        @Html.TextArea("Conteudo", Model?.Conteudo, htmlAttributes: new { @class = "form-control" })
+    </div>
 
     <input type="submit" value="Enviar" />
 }

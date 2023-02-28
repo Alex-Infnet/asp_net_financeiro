@@ -21,14 +21,14 @@ namespace Web.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult FaleConosco(TipoInvestimento tipoInvestimento)
+        public IActionResult FaleConosco(Contact contact)
         {
             ViewBag.outputMessage = new FormOutputMessage()
             {
                 Valid = false,
                 Message = "Formulário enviado com sucesso"
             };
-            return View(tipoInvestimento);
+            return View(contact);
         }
         [ResultFilter]
         public IActionResult Filter()

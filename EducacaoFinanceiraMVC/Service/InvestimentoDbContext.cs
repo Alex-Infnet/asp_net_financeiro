@@ -9,6 +9,7 @@ namespace Service
         public InvestimentoDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<TipoInvestimento> tipoInvestimento { get; set; }
-	}
+        public DbSet<Contact> contact { get; set; }
+    }
 }
 
