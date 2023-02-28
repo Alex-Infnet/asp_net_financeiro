@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Hosting
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,6 +10,11 @@
 </head>
 <body>
     @Html.Partial("Header")
+    <environment exclude="Production">
+        <div class="alert alert-danger">
+            Você está rodando fora de produção!
+        </div>
+    </environment>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
