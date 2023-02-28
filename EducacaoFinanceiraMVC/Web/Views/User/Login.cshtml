@@ -1,0 +1,9 @@
+﻿@{
+}
+
+@using (Html.BeginForm("login", "user", FormMethod.Post))
+{
+    @Html.TextBox("Username");
+    @Html.Password("Password");
+    <input type="submit" value="Enviar" />
+}
