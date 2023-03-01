@@ -25,10 +25,6 @@ builder.Services.AddSession();
 // Add cache
 builder.Services.AddMemoryCache();
 
-// Add authentication Provider
-builder.Services.AddDefaultIdentity<IdentityUser>()
-    .AddEntityFrameworkStores<InvestimentoDbContext>();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
