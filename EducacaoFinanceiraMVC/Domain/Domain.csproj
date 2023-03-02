@@ -10,10 +10,12 @@
     <None Remove="Entities\" />
     <None Remove="Interfaces\" />
     <None Remove="ViewModels\" />
+    <None Remove="Validators\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Interfaces\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Validators\" />
   </ItemGroup>
 </Project>
