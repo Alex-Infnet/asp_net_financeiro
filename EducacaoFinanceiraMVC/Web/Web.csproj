@@ -21,6 +21,7 @@
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Filters\" />
     <None Remove="Helpers\" />
+    <None Remove="Views\InscricaoCurso\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
@@ -51,5 +52,6 @@
     <Folder Include="Views\User\" />
     <Folder Include="Filters\" />
     <Folder Include="TagHelpers\" />
+    <Folder Include="Views\InscricaoCurso\" />
   </ItemGroup>
 </Project>

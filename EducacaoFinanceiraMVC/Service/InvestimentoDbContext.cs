@@ -10,6 +10,7 @@ namespace Service
 
         public DbSet<TipoInvestimento> tipoInvestimento { get; set; }
         public DbSet<Contact> contact { get; set; }
+        public DbSet<InscricaoCurso> inscricaoCurso { get; set; }
     }
 }
 

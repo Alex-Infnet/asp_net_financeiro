@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ITipoInvestimentoService, TipoInvestimentoService>();
+builder.Services.AddScoped<IInscricaCursoService, InscricaCursoService>();
 
 builder.Services.AddDbContext<InvestimentoDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("InvestimentoDb")
