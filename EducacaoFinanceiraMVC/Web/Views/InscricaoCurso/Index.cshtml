@@ -1,0 +1,39 @@
+﻿@model Domain.ViewModels.InscricaoCursoViewModel
+@{
+}
+
+<h2>
+    Página de inscrição para os cursos
+</h2>
+
+@using (Html.BeginForm("new", "inscricaocurso", HttpMethod.Post))
+{
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Curso, "Curso:", new { @class = "form-label" })
+        @Html.DropDownListFor(m => m.Curso, new SelectList(Model.Cursos, "Id", "Descricao"), "Selecione um curso", new { @class = "form-control" })
+    </div>
+    <div class="mb-3">
+        @Html.Label("Turno", "Turnos de preferência:", new { @class = "form-label" })
+        <div class="form-check">
+            @Html.CheckBoxFor(m => m.Matutino, new { @class = "form-check-input" })
+            @Html.Label("Matutino", "Matutino", new { @class = "form-check-label" })
+        </div>
+        <div class="form-check">
+            @Html.CheckBoxFor(m => m.Vespertino, new { @class = "form-check-input" })
+            @Html.Label("Vespertino", "Vespertino", new { @class = "form-check-label" })
+        </div>
+        <div class="form-check">
+            @Html.CheckBoxFor(m => m.Noturno, new { @class = "form-check-input" })
+            @Html.Label("Noturno", "Noturno", new { @class = "form-check-label" })
+        </div>
+    </div>
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Nome, "Nome:", new { @class = "form-label" })
+        @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+    </div>
+    <div class="mb-3">
+        @Html.Label("TermosAceite", "Aceite dos termos de inscrição:", new { @class = "form-label" })
+        @Html.RadioButtonFor(m => m.TermosAceite, "Confirma aceite dos termos?")
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-default" />
+}
