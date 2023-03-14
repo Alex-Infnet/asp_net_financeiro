@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Domain.Entities;
 
 namespace Domain.ViewModels
@@ -6,6 +7,8 @@ namespace Domain.ViewModels
 	public class TipoInvestimentoViewModel
 	{
 		public int Id { get; set; }
+		[Required]
+		[MaxLength(255, ErrorMessage = "O campo excede o tamanho máximo permitido")]
 		public string? Descricao { get; set; }
 
 		private bool _Active { get; set; }
@@ -18,7 +21,12 @@ namespace Domain.ViewModels
 
 		public bool Selected { get; set; }
 
-		public TipoInvestimentoViewModel(TipoInvestimento tipoInvestimento)
+        public TipoInvestimentoViewModel()
+		{
+
+		}
+
+        public TipoInvestimentoViewModel(TipoInvestimento tipoInvestimento)
 		{
 			this.Id = tipoInvestimento.Id;
 			this.Descricao = tipoInvestimento.Descricao;

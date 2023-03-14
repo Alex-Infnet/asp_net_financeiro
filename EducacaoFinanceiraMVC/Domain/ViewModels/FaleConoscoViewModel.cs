@@ -30,6 +30,13 @@ namespace Domain.ViewModels
 				Conteudo = Conteudo
             };
 		}
-	}
+        public FaleConoscoViewModel() { }
+        public FaleConoscoViewModel(Contact contact)
+		{
+			Nome = contact.Name;
+			Email = contact.Email;
+			Conteudo = contact.Conteudo;
+        }
+    }
 }
 
