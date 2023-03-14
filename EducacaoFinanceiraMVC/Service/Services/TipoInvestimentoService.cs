@@ -13,6 +13,19 @@ namespace Service.Services
 			_dbContext = dbContext;
 		}
 
+        public void Create(TipoInvestimento tipoInvestimento)
+        {
+            _dbContext.tipoInvestimento.Add(tipoInvestimento);
+            _dbContext.SaveChanges();
+        }
+
+        public void Delete(int Id)
+        {
+            var tipoInvestimento = _dbContext.tipoInvestimento.Where(t => t.Id == Id).First();
+            _dbContext.tipoInvestimento.Remove(tipoInvestimento);
+            _dbContext.SaveChanges();
+        }
+
         public IList<TipoInvestimentoViewModel> GetAll()
         {
             var tipoInvestimentos = _dbContext.tipoInvestimento.ToList();
@@ -28,6 +41,12 @@ namespace Service.Services
         public List<TipoInvestimento> GetByDescricao(string Descricao)
         {
             return _dbContext.tipoInvestimento.Where(t => t.Descricao.ToLower() == Descricao.ToLower()).ToList();
+        }
+
+        public void Update(TipoInvestimento tipoInvestimento)
+        {
+            _dbContext.tipoInvestimento.Update(tipoInvestimento);
+            _dbContext.SaveChanges();
         }
     }
 }

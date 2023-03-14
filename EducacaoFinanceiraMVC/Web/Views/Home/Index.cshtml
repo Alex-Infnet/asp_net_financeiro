@@ -1,0 +1,33 @@
+﻿@{
+}
+
+<div>
+    <ul id="list-investimentos">
+
+    </ul>
+</div>
+
+<script type="text/javascript">
+
+    fetch('https://localhost:7172/tipoinvestimento', {
+        method: 'GET',
+    })
+    .then(
+        data => data.json()
+    )
+    .then(
+        data => {
+            const listInvestimentos = data.map(t => {
+                return '<li>' + t.Descricao + '</li>'
+            })
+            document.getElementById('list-investimentos').append(listInvestimentos)
+        }
+    )
+    .catch(error => {
+        console.log(error)
+        alert('Enable to retrieve data')
+        }
+    )
+
+</script>
+
