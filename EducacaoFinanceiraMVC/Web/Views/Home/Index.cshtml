@@ -17,10 +17,11 @@
     )
     .then(
         data => {
+            var elements = "";
             const listInvestimentos = data.map(t => {
-                return '<li>' + t.Descricao + '</li>'
+                elements += '<li>' + t.descricao + '</li>'
             })
-            document.getElementById('list-investimentos').append(listInvestimentos)
+            document.getElementById('list-investimentos').innerHTML = elements
         }
     )
     .catch(error => {

@@ -12,7 +12,6 @@ using Domain.ViewModels;
 
 namespace WebApi.Controllers
 {
-    [DisableCors]
     [ApiController]
     public class TipoInvestimentoController : ControllerBase
     {

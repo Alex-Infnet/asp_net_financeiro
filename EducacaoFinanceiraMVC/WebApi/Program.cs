@@ -5,6 +5,19 @@ using Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var myCors = "InvestimentoCORS";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: myCors,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5183")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+        });
+});
+
 builder.Services.AddControllers();
 /*
 builder.Services.AddControllers()
@@ -34,7 +47,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseCors();
+    app.UseCors(myCors);
 }
 
 app.UseHttpsRedirection();
