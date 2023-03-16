@@ -13,8 +13,13 @@ namespace Service.Services
 			_dbContext = dbContext;
 		}
 
-        public void Create(TipoInvestimento tipoInvestimento)
+        public void Create(TipoInvestimentoViewModel tipoInvestimentoViewModel)
         {
+            var tipoInvestimento = new TipoInvestimento()
+            {
+                Active = tipoInvestimentoViewModel.Status == "Ativo",
+                Descricao = tipoInvestimentoViewModel.Descricao
+            };
             _dbContext.tipoInvestimento.Add(tipoInvestimento);
             _dbContext.SaveChanges();
         }

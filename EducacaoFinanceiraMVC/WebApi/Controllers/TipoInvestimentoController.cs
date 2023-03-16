@@ -6,12 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Entities;
 using Microsoft.AspNetCore.Cors;
+using Domain.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebApi.Controllers
 {
-    [DisableCors]
     [ApiController]
     public class TipoInvestimentoController : ControllerBase
     {
@@ -28,9 +28,9 @@ namespace WebApi.Controllers
         }
         [Route("/tipoinvestimento/new")]
         [HttpPost]
-        public IActionResult Create(TipoInvestimento tipoInvestimento)
+        public IActionResult Create(TipoInvestimentoViewModel tipoInvestimentoViewModel)
         {
-            _service.Create(tipoInvestimento);
+            _service.Create(tipoInvestimentoViewModel);
             return NoContent();
         }
         [Route("/tipoinvestimento")]

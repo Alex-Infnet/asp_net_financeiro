@@ -1,6 +1,7 @@
 ﻿using System;
 using Domain.Entities;
 using Domain.Interfaces;
+using Domain.ViewModels;
 
 namespace Service.Services
 {
@@ -11,6 +12,18 @@ namespace Service.Services
         {
             _dbContext = dbContext;
         }
+
+        public IList<FaleConoscoViewModel> All()
+        {
+            var contacts = _dbContext.contact.ToList();
+            var listContacts = new List<FaleConoscoViewModel>();
+            contacts.ForEach(c =>
+            {
+                listContacts.Add(new FaleConoscoViewModel(c));
+            });
+            return listContacts;
+        }
+
         public void Create(Contact contact)
         {
             _dbContext.contact.Add(contact);
