@@ -3,7 +3,7 @@ using Domain.ViewModels;
 
 namespace Domain.Interfaces
 {
-	public interface IInscricaCursoService
+	public interface IInscricaoCursoService
 	{
 		void Create(InscricaoCursoViewModel inscricaoCursoViewModel);
 	}

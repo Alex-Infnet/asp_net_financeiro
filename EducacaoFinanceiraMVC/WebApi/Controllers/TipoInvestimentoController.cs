@@ -7,12 +7,14 @@ using Domain.Interfaces;
 using Domain.Entities;
 using Microsoft.AspNetCore.Cors;
 using Domain.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebApi.Controllers
 {
     [ApiController]
+    [Authorize]
     public class TipoInvestimentoController : ControllerBase
     {
         public ITipoInvestimentoService _service { get; set; }

@@ -5,10 +5,10 @@ using Domain.ViewModels;
 
 namespace Service.Services
 {
-    public class InscricaCursoService : IInscricaCursoService
+    public class InscricaoCursoService : IInscricaoCursoService
     {
         private readonly InvestimentoDbContext _dbContext;
-        public InscricaCursoService(InvestimentoDbContext dbContext)
+        public InscricaoCursoService(InvestimentoDbContext dbContext)
         {
             _dbContext = dbContext;
         }
