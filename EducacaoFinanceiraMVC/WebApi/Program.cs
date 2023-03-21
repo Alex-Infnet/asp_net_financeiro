@@ -2,6 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Service;
 using Service.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +23,42 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
+
+var key = Encoding.ASCII.GetBytes(builder.Configuration.GetValue("TokenSecret", "#"));
+
+
 /*
-builder.Services.AddControllers()
-    .ConfigureApiBehaviorOptions(options =>
+var JwtOptions = new JwtBearerOptions()
+{
+    RequireHttpsMetadata = false,
+    SaveToken = true,
+    TokenValidationParameters = new TokenValidationParameters()
     {
-        options.SuppressModelStateInvalidFilter = true;
-    });
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    }
+};
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+        builder.Configuration.Bind("JwtSettings", JwtOptions)
+    );
 */
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 // Add services to the container.
@@ -35,6 +67,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ITipoInvestimentoService, TipoInvestimentoService>();
 builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddSingleton<TokenService>();
 
 builder.Services.AddDbContext<InvestimentoDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("InvestimentoDb")
@@ -51,6 +85,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
