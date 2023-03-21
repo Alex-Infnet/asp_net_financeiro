@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sUQuFv11dk2biEwK6691aLnWNv12cLornFDheUo+5IuMDkld35cMhRG8uFaZ5OsGS28yRysMNIVGie1uX1n9KQ==",
+  "dgSpecHash": "uavG+mzIskymQOolH7OIhHlr/+l4xCy+K7lIkPVzrwrFNDrJiniCLVAVPoD4ja5+A5fxEkXtt7HkLNRi1eLbXw==",
   "success": true,
   "projectFilePath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/EducacaoFinanceiraMVC/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/xanwerneck/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/xanwerneck/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/xanwerneck/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.4/microsoft.aspnetcore.authentication.jwtbearer.7.0.4.nupkg.sha512",
     "/Users/xanwerneck/.nuget/packages/microsoft.aspnetcore.openapi/7.0.3/microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",
     "/Users/xanwerneck/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/xanwerneck/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

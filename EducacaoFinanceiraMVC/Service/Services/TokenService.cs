@@ -9,8 +9,7 @@ namespace Service.Services
 {
 	public class TokenService
 	{
-        private string Secret = "HEREIS$MY$SECRET";
-		public string GenerateToken(User user)
+		public string GenerateToken(User user, string Secret)
 		{
             var handler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(Secret);
@@ -21,7 +20,8 @@ namespace Service.Services
                 {
                     new Claim(ClaimTypes.Email, user.Email)
                 }),
-                Expires = DateTime.Now.AddHours(12)
+                Expires = DateTime.Now.AddHours(12),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
             return handler.WriteToken(

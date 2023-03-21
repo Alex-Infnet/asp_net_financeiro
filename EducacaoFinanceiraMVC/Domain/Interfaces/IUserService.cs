@@ -7,6 +7,7 @@ namespace Domain.Interfaces
 	{
         User Find(string Email);
 		void Create(string Email, string Password, string Nome);
+		IList<User> GetAll();
 	}
 }
 

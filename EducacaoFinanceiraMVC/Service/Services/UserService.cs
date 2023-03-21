@@ -26,6 +26,10 @@ namespace Service.Services
             _dbContext.user.Add(user);
             _dbContext.SaveChanges();
         }
+        public IList<User> GetAll()
+        {
+            return _dbContext.user.ToList();
+        }
     }
 }
 
