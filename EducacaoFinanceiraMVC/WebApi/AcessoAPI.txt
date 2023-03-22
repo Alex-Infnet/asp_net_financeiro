@@ -1,0 +1,14 @@
+﻿Descrição de acesso ao método CREATE
+
+Endpoint:
+/amigo/create
+
+
+Parametros:
+nome | sobrenome | email | data_de_aniversario | telefone
+
+Metodo:
+POST
+
+Headers:
+Authorization: Bearer TOKEN
