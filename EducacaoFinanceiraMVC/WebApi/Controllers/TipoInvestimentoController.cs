@@ -30,6 +30,7 @@ namespace WebApi.Controllers
         }
         [Route("/tipoinvestimento/new")]
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public IActionResult Create(TipoInvestimentoViewModel tipoInvestimentoViewModel)
         {
             _service.Create(tipoInvestimentoViewModel);
