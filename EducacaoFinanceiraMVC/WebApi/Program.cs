@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Text;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,29 +23,13 @@ builder.Services.AddCors(options =>
         });
 });
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(configure =>
+    {
+        configure.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration.GetValue("TokenSecret", "#"));
-
-
-/*
-var JwtOptions = new JwtBearerOptions()
-{
-    RequireHttpsMetadata = false,
-    SaveToken = true,
-    TokenValidationParameters = new TokenValidationParameters()
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false
-    }
-};
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
-        builder.Configuration.Bind("JwtSettings", JwtOptions)
-    );
-*/
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -68,6 +53,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ITipoInvestimentoService, TipoInvestimentoService>();
 builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICursoService, CursoService>();
 builder.Services.AddSingleton<TokenService>();
 
 builder.Services.AddDbContext<InvestimentoDbContext>(options => options.UseSqlServer(

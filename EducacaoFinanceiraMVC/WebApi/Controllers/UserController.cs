@@ -19,14 +19,17 @@ namespace WebApi.Controllers
         private readonly IUserService _service;
         private readonly TokenService _tokenService;
         private readonly IConfiguration _configuration;
+        private readonly ICursoService _cursoService;
         public UserController(
             IUserService service,
             TokenService tokenService,
-            IConfiguration configuration)
+            IConfiguration configuration,
+            ICursoService cursoService)
         {
             _service = service;
             _tokenService = tokenService;
             _configuration = configuration;
+            _cursoService = cursoService;
         }
         private string GetSHA512Password(string Password)
         {
