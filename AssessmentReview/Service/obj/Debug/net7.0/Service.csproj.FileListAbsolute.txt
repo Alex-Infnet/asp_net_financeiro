@@ -1,0 +1,15 @@
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/bin/Debug/net7.0/Service.deps.json
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/bin/Debug/net7.0/Service.dll
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/bin/Debug/net7.0/Service.pdb
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/bin/Debug/net7.0/Domain.dll
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/bin/Debug/net7.0/Domain.pdb
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.csproj.AssemblyReference.cache
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.AssemblyInfoInputs.cache
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.AssemblyInfo.cs
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.csproj.CoreCompileInputs.cache
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.csproj.CopyComplete
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.dll
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/refint/Service.dll
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/Service.pdb
+/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/Debug/net7.0/ref/Service.dll

@@ -1,0 +1,191 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Api/Api.csproj": {}
+  },
+  "projects": {
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Api/Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Api/Api.csproj",
+        "projectName": "Api",
+        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Api/Api.csproj",
+        "packagesPath": "/Users/xanwerneck/.nuget/packages/",
+        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/Domain.csproj": {
+                "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/Domain.csproj"
+              },
+              "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/Service.csproj": {
+                "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/Domain.csproj",
+        "packagesPath": "/Users/xanwerneck/.nuget/packages/",
+        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/Service.csproj",
+        "projectName": "Service",
+        "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/Service.csproj",
+        "packagesPath": "/Users/xanwerneck/.nuget/packages/",
+        "outputPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xanwerneck/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/Domain.csproj": {
+                "projectPath": "/Users/xanwerneck/Infnet/ASPNET/Projects/asp_net_financeiro/AssessmentReview/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
