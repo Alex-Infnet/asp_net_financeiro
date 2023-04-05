@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAuthentication", "ApiAuthentication\ApiAuthentication.csproj", "{914E8F24-EDB7-4C13-9292-BB19F8E52A2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebIdentity", "WebIdentity\WebIdentity.csproj", "{1E8B6AB1-3B07-4467-BBC2-E4D6E54091F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{914E8F24-EDB7-4C13-9292-BB19F8E52A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{914E8F24-EDB7-4C13-9292-BB19F8E52A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{914E8F24-EDB7-4C13-9292-BB19F8E52A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8B6AB1-3B07-4467-BBC2-E4D6E54091F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8B6AB1-3B07-4467-BBC2-E4D6E54091F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8B6AB1-3B07-4467-BBC2-E4D6E54091F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8B6AB1-3B07-4467-BBC2-E4D6E54091F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,11 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Service
 {
-	public class InvestimentoDbContext : DbContext
-	{
+	public class InvestimentoDbContext : IdentityDbContext
+    {
         public InvestimentoDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<TipoInvestimento> tipoInvestimento { get; set; }
@@ -14,6 +16,7 @@ namespace Service
         public DbSet<User> user { get; set; }
         public DbSet<Curso> curso { get; set; }
         public DbSet<Professor> professor { get; set; }
+        public DbSet<IdentityUser> identity { get; set; }
         /*
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
